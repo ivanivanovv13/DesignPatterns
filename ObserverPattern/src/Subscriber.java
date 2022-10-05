@@ -7,12 +7,11 @@ public class Subscriber implements Observer {
     }
 
     @Override
-    public void update(){
-        System.out.println("Hey "+name+" Video Uploaded: "+channel.getTitle());
+    public void update() {
+        System.out.println("Hey " + name + " Video Uploaded: " + channel.getTitle());
     }
 
-    @Override
-    public  void subscribeChannel(Channel ch){
-        this.channel=ch;
+    public void subscribeChannel(Channel ch) {
+        this.channel = ch;
     }
 }
