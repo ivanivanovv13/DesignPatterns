@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
-public class SongsOfThe70s  implements SongIterator{
-    ArrayList<SongInfo> bestSongs;
+public class SongsOfThe70s implements SongIterator {
+    List<SongInfo> bestSongs;
 
     public SongsOfThe70s() {
         this.bestSongs = new ArrayList<SongInfo>();
