@@ -15,7 +15,7 @@ public class Main {
     }
 
     public void setUp() {
-        pool = new ObjectPool<ExportingProcess>(3, 10, 5) {
+        pool = new ObjectPool<>(3, 10, 5) {
             @Override
             protected ExportingProcess createObject() {
                 return new ExportingProcess(processNo.incrementAndGet());
